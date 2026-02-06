@@ -1,0 +1,45 @@
+@keyframes gridMoveDiagonal {
+  from {
+    background-position: 0 0, 0 0, center;
+  }
+  to {
+    background-position: 32px 32px, 32px 32px, center;
+  }
+}
+body {
+  margin: 0;
+  background: linear-gradient(to right, rgba(71, 85, 105, 0.15) 1px, transparent 1px) 0% 0%/40px 40px, linear-gradient(rgba(71, 85, 105, 0.15) 1px, transparent 1px) 0% 0%/40px 40px, radial-gradient(circle at 50% 60%, rgba(236, 72, 153, 0.15) 0%, rgba(168, 85, 247, 0.05) 40%, transparent 70%) 0% 0%/100% 100% rgb(2, 6, 23);
+  background-size: 32px 32px, 32px 32px, 100% 100%;
+  animation: gridMoveDiagonal 5s linear infinite;
+}
+
+header .inner__menu {
+  padding-top: 10px;
+}
+header .container {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+header .list__menu {
+  width: 480px;
+  padding: 8px 24px;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+header .list__menu ul {
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+header .list__menu li {
+  list-style-type: none;
+}
+header .list__menu a {
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--color-text-list-menu);
+}
+
+/*# sourceMappingURL=style.css.map */
