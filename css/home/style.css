@@ -1,34 +1,52 @@
 @keyframes gridMoveDiagonal {
   from {
-    background-position: 0 0, 0 0, center;
+    background-position: 0 0, 0 0, center, center;
   }
   to {
-    background-position: 32px 32px, 32px 32px, center;
+    background-position: 40px 40px, 40px 40px, center, center;
   }
 }
 body {
   margin: 0;
-  background: linear-gradient(to right, rgba(71, 85, 105, 0.15) 1px, transparent 1px) 0% 0%/40px 40px, linear-gradient(rgba(71, 85, 105, 0.15) 1px, transparent 1px) 0% 0%/40px 40px, radial-gradient(circle at 50% 60%, rgba(236, 72, 153, 0.15) 0%, rgba(168, 85, 247, 0.05) 40%, transparent 70%) 0% 0%/100% 100% rgb(2, 6, 23);
-  background-size: 32px 32px, 32px 32px, 100% 100%;
-  animation: gridMoveDiagonal 5s linear infinite;
+  background: linear-gradient(to right, rgba(71, 85, 105, 0.15) 1px, transparent 1px) 0% 0%/40px 40px, linear-gradient(rgba(71, 85, 105, 0.15) 1px, transparent 1px) 0% 0%/40px 40px, radial-gradient(circle at 10% 70%, rgba(143, 4, 74, 0.286) 10%, rgba(168, 85, 247, 0.05) 40%, transparent 70%), radial-gradient(circle at 90% 70%, rgba(143, 4, 74, 0.286) 10%, rgba(168, 85, 247, 0.05) 40%, transparent 70%) rgb(3, 9, 35);
+  background-attachment: fixed;
+  animation: gridMoveDiagonal 3s linear infinite;
 }
 
+header .btn__useAI {
+  background: linear-gradient(90deg, rgb(155, 42, 114) 0%, rgb(199, 87, 158) 50%, rgb(237, 221, 83) 98%);
+  border: 0;
+}
+header {
+  position: sticky;
+  top: 0;
+}
+header .menu__item {
+  display: flex;
+}
 header .inner__menu {
-  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
 }
 header .container {
-  padding-left: 10%;
-  padding-right: 10%;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 header .list__menu {
-  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 385px;
   padding: 8px 24px;
   border-radius: 40px;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(3px);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 header .list__menu ul {
+  justify-content: center;
+  padding: 0px;
   margin: 0;
   display: flex;
   gap: 20px;
@@ -40,6 +58,9 @@ header .list__menu a {
   text-decoration: none;
   list-style-type: none;
   color: var(--color-text-list-menu);
+}
+header .list__menu li:hover a {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

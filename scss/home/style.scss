@@ -4,15 +4,18 @@
     background-position:
       0 0,
       0 0,
+      center,
       center;
   }
   to {
     background-position:
-      32px 32px,
-      32px 32px,
+      40px 40px,
+      40px 40px,
+      center,
       center;
   }
 }
+
 
 body {
   margin: 0;
@@ -22,38 +25,57 @@ body {
     linear-gradient(rgba(71, 85, 105, 0.15) 1px, transparent 1px) 0% 0% / 40px
       40px,
     radial-gradient(
-        circle at 50% 60%,
-        rgba(236, 72, 153, 0.15) 0%,
+        circle at 10% 70%,
+        rgba(143, 4, 74, 0.286) 10%,
+        rgba(168, 85, 247, 0.05) 40%,
+        transparent 70%
+      ),
+          radial-gradient(
+        circle at 90% 70%,
+        rgba(143, 4, 74, 0.286) 10%,
         rgba(168, 85, 247, 0.05) 40%,
         transparent 70%
       )
-      0% 0% / 100% 100% rgb(2, 6, 23);
-
-  background-size:
-    32px 32px,
-    32px 32px,
-    100% 100%;
-  animation: gridMoveDiagonal 5s linear infinite;
+      rgb(3 9 35);
+      background-attachment: fixed;
+  animation: gridMoveDiagonal 3s linear infinite;
 }
 //end background
 
+
 // header
 header {
+  & .btn__useAI{
+    background: linear-gradient(90deg,rgba(155, 42, 114, 1) 0%, rgba(199, 87, 158, 1) 50%, rgba(237, 221, 83, 1) 98%);
+    border:0;
+  }
+  position: sticky;
+  top:0;
+  & .menu__item{
+    display:flex;
+  }
   & .inner__menu {
-    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
   }
   & .container {
-    padding-left: 10%;
-    padding-right: 10%;
+    width:100%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   & .list__menu {
-    width: 480px;
+    margin-left:auto;
+    margin-right:auto;
+    width: 385px;
     padding: 8px 24px;
     border-radius: 40px;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(3px);
     border: 1px solid rgb(255 255 255 / 0.1);
     & ul {
+      justify-content: center;
+      padding:0px;
       margin: 0;
       display: flex;
       gap: 20px;
@@ -65,6 +87,11 @@ header {
       text-decoration: none;
       list-style-type: none;
       color: var(--color-text-list-menu);
+    }
+    & li:hover{
+      & a{
+        color:white;
+      }
     }
   }
 }
