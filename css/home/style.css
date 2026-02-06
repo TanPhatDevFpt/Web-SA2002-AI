@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @keyframes gridMoveDiagonal {
   from {
     background-position: 0 0, 0 0, center, center;
@@ -7,6 +8,7 @@
   }
 }
 body {
+  font-family: "Be Vietnam Pro", sans-serif;
   margin: 0;
   background: linear-gradient(to right, rgba(71, 85, 105, 0.15) 1px, transparent 1px) 0% 0%/40px 40px, linear-gradient(rgba(71, 85, 105, 0.15) 1px, transparent 1px) 0% 0%/40px 40px, radial-gradient(circle at 10% 70%, rgba(143, 4, 74, 0.286) 10%, rgba(168, 85, 247, 0.05) 40%, transparent 70%), radial-gradient(circle at 90% 70%, rgba(143, 4, 74, 0.286) 10%, rgba(168, 85, 247, 0.05) 40%, transparent 70%) rgb(3, 9, 35);
   background-attachment: fixed;
@@ -14,8 +16,18 @@ body {
 }
 
 header .btn__useAI {
-  background: linear-gradient(90deg, rgb(155, 42, 114) 0%, rgb(199, 87, 158) 50%, rgb(237, 221, 83) 98%);
+  box-shadow: rgba(233, 204, 55, 0.283) 0px 0px 66px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  background: linear-gradient(90deg, rgb(56, 229, 59) 0%, rgb(83, 205, 97) 50%, rgb(239, 169, 39) 98%);
   border: 0;
+  transition: 0.5s ease;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+header .btn__useAI:hover {
+  filter: brightness(1.1);
 }
 header {
   position: sticky;
@@ -27,12 +39,12 @@ header .menu__item {
 header .inner__menu {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 header .container {
   width: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 header .list__menu {
   margin-left: auto;
@@ -55,6 +67,7 @@ header .list__menu li {
   list-style-type: none;
 }
 header .list__menu a {
+  font-size: 14px;
   text-decoration: none;
   list-style-type: none;
   color: var(--color-text-list-menu);
