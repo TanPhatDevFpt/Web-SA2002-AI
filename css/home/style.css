@@ -58,6 +58,12 @@ body {
   animation: gridMoveDiagonal 3s linear infinite;
 }
 
+.sun .inner__advise, .sun .inner__advise1, .sun .inner__advise2 {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.sun .inner__advise .inner__description p, .sun .inner__advise1 .inner__description p, .sun .inner__advise2 .inner__description p {
+  color: var(--color-text-background-sun) !important;
+}
 .sun .logo__sun {
   display: block !important;
 }
@@ -75,6 +81,7 @@ body {
   color: #f26f25;
 }
 .sun header .inner__darkmode {
+  backdrop-filter: blur(3px);
   background-color: #e2e8f0;
   border: 1px solid #cbd5e1;
 }
@@ -97,6 +104,11 @@ body {
   background-size: 20px 20px, 20px 20px, 100% 100vh, 100% 100vh;
 }
 
+header {
+  z-index: 99999;
+  position: sticky;
+  top: 0;
+}
 header .inner__darkmode {
   background-color: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -131,10 +143,6 @@ header .btn__useAI {
 }
 header .btn__useAI:hover {
   filter: brightness(1.1);
-}
-header {
-  position: sticky;
-  top: 0;
 }
 header .menu__item {
   display: flex;
@@ -224,9 +232,51 @@ header .list__menu li:hover a {
   height: auto;
 }
 .section__1 .inner__content .inner__imgAI {
+  position: relative;
   width: 50%;
   display: flex;
   justify-content: center;
+}
+.section__1 .inner__content .inner__imgAI .inner__advise, .section__1 .inner__content .inner__imgAI .inner__advise1, .section__1 .inner__content .inner__imgAI .inner__advise2 {
+  left: 5%;
+  top: 80%;
+  z-index: 2;
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+}
+.section__1 .inner__content .inner__imgAI .inner__advise .inner__description, .section__1 .inner__content .inner__imgAI .inner__advise1 .inner__description, .section__1 .inner__content .inner__imgAI .inner__advise2 .inner__description {
+  width: 100%;
+}
+.section__1 .inner__content .inner__imgAI .inner__advise .logo__AIadvise, .section__1 .inner__content .inner__imgAI .inner__advise1 .logo__AIadvise, .section__1 .inner__content .inner__imgAI .inner__advise2 .logo__AIadvise {
+  padding: 10px 11px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+}
+.section__1 .inner__content .inner__imgAI .inner__advise .inner__description span, .section__1 .inner__content .inner__imgAI .inner__advise1 .inner__description span, .section__1 .inner__content .inner__imgAI .inner__advise2 .inner__description span {
+  font-size: 13px;
+  color: var(--color-text-section1-description);
+}
+.section__1 .inner__content .inner__imgAI .inner__advise .inner__description p, .section__1 .inner__content .inner__imgAI .inner__advise1 .inner__description p, .section__1 .inner__content .inner__imgAI .inner__advise2 .inner__description p {
+  color: white;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+}
+.section__1 .inner__content .inner__imgAI .inner__advise1 {
+  right: 1%;
+  left: auto;
+  top: 37%;
+}
+.section__1 .inner__content .inner__imgAI .inner__advise2 {
+  top: 5%;
 }
 .section__1 .inner__content .inner__imgAI img {
   width: 500px;

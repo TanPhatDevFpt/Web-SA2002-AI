@@ -26,11 +26,21 @@
 
 // animations titile
 @keyframes typing {
-  0%   { width: 0; }
-  35%  { width: 32ch; } 
-  55%  { width: 32ch; }  
-  85%  { width: 0; }      
-  100% { width: 0; }     
+  0% {
+    width: 0;
+  }
+  35% {
+    width: 32ch;
+  }
+  55% {
+    width: 32ch;
+  }
+  85% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
 }
 @keyframes blink {
   50% {
@@ -85,6 +95,14 @@ body {
   animation: gridMoveDiagonal 3s linear infinite;
 }
 .sun {
+  & .inner__advise, .inner__advise1, .inner__advise2{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    & .inner__description{
+      & p{
+        color:var(--color-text-background-sun) !important;
+      }
+    }
+  }
   & .logo__sun {
     display: block !important;
   }
@@ -104,6 +122,7 @@ body {
       }
     }
     & .inner__darkmode {
+      backdrop-filter: blur(3px);
       background-color: #e2e8f0;
       border: 1px solid #cbd5e1;
       & .fa-sun {
@@ -144,6 +163,9 @@ body {
 
 // header
 header {
+  z-index: 99999;
+  position: sticky;
+  top: 0;
   & .inner__darkmode {
     background-color: rgba(255, 255, 255, 0.04);
     border: 1px solid rgb(255 255 255 / 0.1);
@@ -186,8 +208,6 @@ header {
   & .btn__useAI:hover {
     filter: brightness(1.1);
   }
-  position: sticky;
-  top: 0;
   & .menu__item {
     display: flex;
   }
@@ -282,9 +302,54 @@ header {
       }
     }
     & .inner__imgAI {
+      position: relative;
       width: 50%;
       display: flex;
       justify-content: center;
+      & .inner__advise, .inner__advise1, .inner__advise2 {
+        left:5%;
+        top:80%;
+        z-index:2;
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(3px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 10px;
+        & .inner__description{
+          width:100%;
+        }
+        & .logo__AIadvise {
+          padding: 10px 11px;
+          border-radius: 50%;
+          background: #2563eb;
+          color: white;
+          font-weight: bold;
+        }
+        & .inner__description {
+          & span{
+
+            font-size:13px;
+            color:var(--color-text-section1-description);
+          }
+          & p {
+            color:white;
+            font-weight: 600;
+            margin: 0;
+            text-align: center;
+          }
+        }
+      }
+      & .inner__advise1{
+        right:1%;
+        left:auto;
+        top:37%;
+      }
+      & .inner__advise2{
+        top:5%;
+      }
       & img {
         width: 500px;
         height: auto;
