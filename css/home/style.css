@@ -412,7 +412,7 @@ header .list__menu li:hover a {
   color: white;
 }
 .section__3 .item {
-  gap: 20px;
+  gap: 40px;
   display: flex;
   margin-left: auto;
   width: 57%;
@@ -439,6 +439,33 @@ header .list__menu li:hover a {
 }
 .section__3 .item .inner__content {
   width: 60%;
+}
+.section__3 .item .inner__content h3 {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+.section__3 .item .inner__content p {
+  color: rgb(141, 141, 141);
+}
+.section__3 .item .inner__content .btn__useAI {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgba(233, 204, 55, 0.283) 0px 0px 66px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  background: linear-gradient(90deg, rgb(56, 229, 59) 0%, rgb(83, 205, 97) 50%, rgb(239, 169, 39) 98%);
+  border: 0;
+  transition: 0.5s ease;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+.section__3 .item .inner__content .btn__useAI:hover {
+  filter: brightness(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */
