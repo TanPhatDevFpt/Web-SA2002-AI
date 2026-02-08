@@ -446,9 +446,12 @@ header .list__menu li:hover a {
   color: white;
 }
 .section__3 .item .inner__content p {
+  margin-top: 10px;
+  margin-bottom: 10px;
   color: rgb(141, 141, 141);
 }
 .section__3 .item .inner__content .btn__useAI {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   width: 120px;
