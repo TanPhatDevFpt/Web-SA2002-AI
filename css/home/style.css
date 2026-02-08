@@ -81,10 +81,14 @@ body {
 .sun .section__2 .inner__title p {
   color: var(--color-text-background-sun);
 }
-.sun .inner__advise, .sun .inner__advise1, .sun .inner__advise2 {
+.sun .inner__advise,
+.sun .inner__advise1,
+.sun .inner__advise2 {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.sun .inner__advise .inner__description p, .sun .inner__advise1 .inner__description p, .sun .inner__advise2 .inner__description p {
+.sun .inner__advise .inner__description p,
+.sun .inner__advise1 .inner__description p,
+.sun .inner__advise2 .inner__description p {
   color: var(--color-text-background-sun) !important;
 }
 .sun .logo__sun {
@@ -262,7 +266,9 @@ header .list__menu li:hover a {
   display: flex;
   justify-content: center;
 }
-.section__1 .inner__content .inner__imgAI .inner__advise, .section__1 .inner__content .inner__imgAI .inner__advise1, .section__1 .inner__content .inner__imgAI .inner__advise2 {
+.section__1 .inner__content .inner__imgAI .inner__advise,
+.section__1 .inner__content .inner__imgAI .inner__advise1,
+.section__1 .inner__content .inner__imgAI .inner__advise2 {
   animation: floatUpDown 3s ease-in-out infinite;
   left: 5%;
   top: 80%;
@@ -276,21 +282,29 @@ header .list__menu li:hover a {
   border-radius: 10px;
   padding: 10px;
 }
-.section__1 .inner__content .inner__imgAI .inner__advise .inner__description, .section__1 .inner__content .inner__imgAI .inner__advise1 .inner__description, .section__1 .inner__content .inner__imgAI .inner__advise2 .inner__description {
+.section__1 .inner__content .inner__imgAI .inner__advise .inner__description,
+.section__1 .inner__content .inner__imgAI .inner__advise1 .inner__description,
+.section__1 .inner__content .inner__imgAI .inner__advise2 .inner__description {
   width: 100%;
 }
-.section__1 .inner__content .inner__imgAI .inner__advise .logo__AIadvise, .section__1 .inner__content .inner__imgAI .inner__advise1 .logo__AIadvise, .section__1 .inner__content .inner__imgAI .inner__advise2 .logo__AIadvise {
+.section__1 .inner__content .inner__imgAI .inner__advise .logo__AIadvise,
+.section__1 .inner__content .inner__imgAI .inner__advise1 .logo__AIadvise,
+.section__1 .inner__content .inner__imgAI .inner__advise2 .logo__AIadvise {
   padding: 10px 11px;
   border-radius: 50%;
   background: #2563eb;
   color: white;
   font-weight: bold;
 }
-.section__1 .inner__content .inner__imgAI .inner__advise .inner__description span, .section__1 .inner__content .inner__imgAI .inner__advise1 .inner__description span, .section__1 .inner__content .inner__imgAI .inner__advise2 .inner__description span {
+.section__1 .inner__content .inner__imgAI .inner__advise .inner__description span,
+.section__1 .inner__content .inner__imgAI .inner__advise1 .inner__description span,
+.section__1 .inner__content .inner__imgAI .inner__advise2 .inner__description span {
   font-size: 13px;
   color: var(--color-text-section1-description);
 }
-.section__1 .inner__content .inner__imgAI .inner__advise .inner__description p, .section__1 .inner__content .inner__imgAI .inner__advise1 .inner__description p, .section__1 .inner__content .inner__imgAI .inner__advise2 .inner__description p {
+.section__1 .inner__content .inner__imgAI .inner__advise .inner__description p,
+.section__1 .inner__content .inner__imgAI .inner__advise1 .inner__description p,
+.section__1 .inner__content .inner__imgAI .inner__advise2 .inner__description p {
   color: white;
   font-weight: 600;
   margin: 0;
@@ -334,26 +348,30 @@ header .list__menu li:hover a {
   backdrop-filter: blur(3px);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
-.section__2 .inner__item .item .fa-brain, .section__2 .inner__item .item .fa-seedling, .section__2 .inner__item .item .fa-lightbulb {
+.section__2 .inner__item .item .fa-brain,
+.section__2 .inner__item .item .fa-seedling,
+.section__2 .inner__item .item .fa-lightbulb {
   transition: 0.5s ease;
   padding: 10px;
   font-size: 30px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.05);
-  color: #F26C21;
+  color: #f26c21;
 }
 .section__2 .inner__item .item h3 {
   color: white;
 }
 .section__2 .inner__item .item p {
-  color: #969EA9;
+  color: #969ea9;
 }
 .section__2 .inner__item .item:hover {
   cursor: pointer;
-  border: 1px solid #13E6ED;
+  border: 1px solid #13e6ed;
 }
-.section__2 .inner__item .item:hover .fa-brain, .section__2 .inner__item .item:hover .fa-seedling, .section__2 .inner__item .item:hover .fa-lightbulb {
-  color: #13E6ED;
+.section__2 .inner__item .item:hover .fa-brain,
+.section__2 .inner__item .item:hover .fa-seedling,
+.section__2 .inner__item .item:hover .fa-lightbulb {
+  color: #13e6ed;
   transform: scale(1.1);
 }
 .section__2 .container {
@@ -378,7 +396,49 @@ header .list__menu li:hover a {
 }
 .section__2 .inner__title p span {
   font-weight: bold;
-  color: #F26C21;
+  color: #f26c21;
+}
+
+.section__3 {
+  margin-bottom: 100px;
+}
+.section__3 .container {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.section__3 h2 {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+.section__3 .item {
+  gap: 20px;
+  display: flex;
+  margin-left: auto;
+  width: 57%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  height: 300px;
+  margin-right: auto;
+}
+.section__3 .item .inner__img {
+  height: 100%;
+  position: relative;
+  width: 30%;
+}
+.section__3 .item .inner__img img {
+  border-radius: 10px 0 0px 10px;
+  width: 100%;
+  object-position: right;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+.section__3 .item .inner__content {
+  width: 60%;
 }
 
 /*# sourceMappingURL=style.css.map */
