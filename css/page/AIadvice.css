@@ -1,0 +1,397 @@
+@keyframes gridMoveDiagonal {
+  from {
+    background-position: 0 0, 0 0, center, center;
+  }
+  to {
+    background-position: 40px 40px, 40px 40px, center, center;
+  }
+}
+body {
+  transition: 0.75s ease;
+  font-family: "Be Vietnam Pro", sans-serif;
+  margin: 0;
+  background: linear-gradient(to right, rgba(71, 85, 105, 0.15) 1px, transparent 1px) 0% 0%/40px 40px, linear-gradient(rgba(71, 85, 105, 0.15) 1px, transparent 1px) 0% 0%/40px 40px, radial-gradient(circle at 10% 70%, rgba(143, 4, 74, 0.286) 10%, rgba(168, 85, 247, 0.05) 40%, transparent 70%), radial-gradient(circle at 90% 70%, rgba(4, 143, 134, 0.286) 10%, rgba(168, 85, 247, 0.05) 40%, transparent 70%) rgb(3, 9, 35);
+  background-attachment: fixed;
+  animation: gridMoveDiagonal 3s linear infinite;
+}
+
+.sun footer .section__2 {
+  background: rgb(255, 255, 255);
+  border-top: 0.75px solid rgb(187, 189, 195);
+}
+.sun footer .section__2 .inner__content h4 {
+  color: var(--color-text-background-sun);
+}
+.sun footer .section__2 .inner__content span {
+  color: var(--color-text-background-sun);
+}
+.sun footer .section__2 hr {
+  background: rgb(187, 189, 195);
+}
+.sun footer .section__2 .inner__logoSA2002 .logoSA2002__sun {
+  display: inline-block;
+}
+.sun footer .section__2 .inner__logoSA2002 .logoSA2002__moon {
+  display: none;
+}
+.sun footer .section__1 {
+  background: linear-gradient(to right, rgb(240, 240, 240) 1px, transparent 1px) 0% 0%/96px 64px, linear-gradient(rgb(240, 240, 240) 1px, transparent 1px) 0% 0%/96px 64px, radial-gradient(600px at 0% 200px, rgb(213, 197, 255), transparent) 0% 0%/100% 100%, radial-gradient(600px at 100% 200px, rgb(213, 197, 255), transparent) 0% 0%/100% 100%, radial-gradient(600px at 50% 0px, rgb(213, 197, 255), transparent) 0% 0%/100% 100%, radial-gradient(600px at 50% 100%, rgb(213, 197, 255), transparent) 0% 0%/100% 100% rgb(255, 255, 255);
+  background-attachment: fixed;
+  animation: gridMoveDiagonal 3s linear infinite;
+}
+.sun footer .section__1 .inner__item .item {
+  background: white;
+}
+.sun footer .section__1 .inner__item .item span {
+  color: var(--color-text-background-sun);
+}
+.sun footer .section__1 .inner__item .item .imgAI__sun {
+  display: inline-block;
+}
+.sun footer .section__1 .inner__item .item .imgAI__moon {
+  display: none;
+}
+.sun .chatbox #messages {
+  background: white !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.sun .chatbox #messages .ai {
+  background: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: var(--color-text-background-sun);
+}
+.sun .chatbox #messages .user {
+  background: #2261F6;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.sun .chatbox .input-box {
+  background: white !important;
+  border: 1px solid rgb(182, 182, 182);
+  border-top: 0;
+}
+.sun .chatbox .input-box input {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.sun header .list__menu {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.sun header .list__menu a {
+  color: var(--color-text-list-menu-sun);
+  transition: 0.25s ease;
+}
+.sun header .list__menu a:hover {
+  color: #f26f25;
+}
+.sun header .inner__darkmode {
+  backdrop-filter: blur(3px);
+  background-color: #e2e8f0;
+  border: 1px solid #cbd5e1;
+}
+.sun header .inner__darkmode .fa-sun {
+  background: white;
+  padding: 8px;
+  border-radius: 50%;
+  color: #f97316;
+}
+.sun header .inner__darkmode .fa-moon {
+  background: rgba(15, 23, 42, 0);
+  border-radius: 0;
+  padding: 0px;
+  color: var(--color-text-list-menu);
+}
+.sun {
+  background: linear-gradient(to right, rgb(240, 240, 240) 1px, transparent 1px) 0% 0%/20px 20px, linear-gradient(rgb(240, 240, 240) 1px, transparent 1px) 0% 0%/20px 20px, radial-gradient(600px at 0% 200px, rgb(213, 197, 255), transparent) 0% 0%/100% 100%, radial-gradient(600px at 100% 200px, rgb(213, 197, 255), transparent) 0% 0%/100% 100% rgb(255, 255, 255);
+  transition: 0.75s ease;
+  background-attachment: fixed;
+  background-repeat: repeat repeat, repeat repeat, no-repeat no-repeat, no-repeat no-repeat;
+  background-size: 20px 20px, 20px 20px, 100% 100%, 100% 100%;
+}
+
+header {
+  z-index: 99999;
+  position: sticky;
+  top: 0;
+}
+header .inner__darkmode {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 2px 8px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+header .inner__darkmode .fa-sun {
+  cursor: pointer;
+  color: var(--color-text-list-menu);
+}
+header .inner__darkmode .fa-moon {
+  cursor: pointer;
+  background: #0f172a;
+  border-radius: 50%;
+  padding: 8px;
+  color: #facc15;
+}
+header .btn__useAI {
+  margin-left: 2%;
+  box-shadow: rgba(233, 204, 55, 0.283) 0px 0px 66px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  background: linear-gradient(90deg, rgb(56, 229, 59) 0%, rgb(83, 205, 97) 50%, rgb(239, 169, 39) 98%);
+  border: 0;
+  transition: 0.5s ease;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+header .btn__useAI:hover {
+  filter: brightness(1.1);
+}
+header .menu__item {
+  display: flex;
+}
+header .inner__menu {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+header .container {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+header .list__menu {
+  margin-left: auto;
+  margin-right: auto;
+  width: 480px;
+  padding: 8px 24px;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+header .list__menu ul {
+  justify-content: center;
+  padding: 0px;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+header .list__menu li {
+  list-style-type: none;
+}
+header .list__menu a {
+  transition: 0.25s ease;
+  font-size: 14px;
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--color-text-list-menu);
+}
+header .list__menu li:hover a {
+  color: white;
+}
+
+.chatbox {
+  margin-bottom: 50px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.chatbox .header {
+  padding: 0px 20px;
+  background: #2565fa;
+  padding-left: 3%;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  gap: 10px;
+}
+.chatbox .header img {
+  width: 60px;
+  height: auto;
+}
+.chatbox .header p {
+  margin-right: auto;
+}
+.chatbox .header button {
+  transition: 0.5s ease;
+  cursor: pointer;
+  border: 0;
+  background: #e11d48;
+  border-radius: 40px;
+  color: white;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+.chatbox .header button:hover {
+  transform: scale(1.1);
+  background: red;
+}
+.chatbox .messages {
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-color: #ffffff #1e1e1e;
+  background: #212121;
+  width: 100%;
+  height: 500px;
+}
+.chatbox .messages .msg {
+  padding: 10px;
+  color: white;
+  max-width: 60%;
+}
+.chatbox .messages .ai {
+  margin-right: auto;
+  background: #1e293b;
+  border-radius: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+.chatbox .messages .user {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  background: #38bdf8;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.chatbox .input-box {
+  padding-top: 20px;
+  background: #212121;
+  border-radius: 0px 0px 20px 20px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  gap: 10px;
+}
+.chatbox .input-box input {
+  padding: 10px 30px;
+  border-radius: 40px;
+  border: 0;
+  transition: 0.5s ease;
+}
+.chatbox .input-box input:focus {
+  outline: none;
+}
+.chatbox .input-box button {
+  transition: 0.25s ease;
+  cursor: pointer;
+  width: 37px;
+  border: 0;
+  background: #2565fa;
+  border-radius: 50%;
+  align-items: center;
+}
+.chatbox .input-box button .fa-paper-plane {
+  color: white;
+}
+.chatbox .input-box button:hover {
+  transform: scale(1.1);
+}
+
+footer .section__2 p {
+  color: var(--color-text-section1-description);
+  font-size: 12px;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+footer .section__2 hr {
+  border: 0;
+  height: 0.75px;
+  background: #1A1A1A;
+}
+footer .section__2 {
+  margin-bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  border-top: 1px solid #1A1A1A;
+}
+footer .section__2 .inner__item {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+footer .section__2 .inner__logoSA2002 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+footer .section__2 .inner__logoSA2002 .logoSA2002__moon {
+  width: 200px;
+  height: auto;
+}
+footer .section__2 .inner__logoSA2002 .logoSA2002__sun {
+  position: relative;
+  right: 11px;
+  width: 200px;
+  height: auto;
+  display: none;
+}
+footer .section__2 .inner__content {
+  width: 50%;
+}
+footer .section__2 .inner__content h4 {
+  color: white;
+}
+footer .section__2 .inner__content .fa-envelope {
+  color: #f26c21;
+  margin-right: 10px;
+}
+footer .section__2 .inner__content span {
+  color: var(--color-text-section1-description);
+}
+footer .section__1 {
+  padding: 2%;
+  margin-bottom: 0;
+}
+footer .section__1 h5 {
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: rgb(107, 114, 128);
+}
+footer .section__1 {
+  background: rgba(0, 0, 0, 0.8);
+}
+footer .section__1 .inner__item {
+  display: flex;
+  justify-content: center;
+}
+footer .section__1 .inner__item .item:hover {
+  border: 1px solid #f26c21;
+}
+footer .section__1 .inner__item .item {
+  transition: 0.75s ease;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  transition: 0.25s ease;
+  padding: 10px;
+  border-radius: 10px;
+  width: 20%;
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+footer .section__1 .inner__item .item .imgAI__sun {
+  right: 4.75%;
+  position: relative;
+  display: none;
+  width: 200px;
+  height: auto;
+  margin-bottom: 5px;
+}
+footer .section__1 .inner__item .item .imgAI__moon {
+  width: 200px;
+  height: auto;
+  margin-bottom: 5px;
+}
+footer .section__1 .inner__item .item span {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+/*# sourceMappingURL=AIadvice.css.map */

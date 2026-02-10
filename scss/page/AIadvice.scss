@@ -1,0 +1,472 @@
+@keyframes gridMoveDiagonal {
+  from {
+    background-position:
+      0 0,
+      0 0,
+      center,
+      center;
+  }
+  to {
+    background-position:
+      40px 40px,
+      40px 40px,
+      center,
+      center;
+  }
+}
+body {
+  transition: 0.75s ease;
+  font-family: "Be Vietnam Pro", sans-serif;
+  margin: 0;
+  background:
+    linear-gradient(to right, rgba(71, 85, 105, 0.15) 1px, transparent 1px) 0%
+      0% / 40px 40px,
+    linear-gradient(rgba(71, 85, 105, 0.15) 1px, transparent 1px) 0% 0% / 40px
+      40px,
+    radial-gradient(
+      circle at 10% 70%,
+      rgba(143, 4, 74, 0.286) 10%,
+      rgba(168, 85, 247, 0.05) 40%,
+      transparent 70%
+    ),
+    radial-gradient(
+        circle at 90% 70%,
+        rgba(4, 143, 134, 0.286) 10%,
+        rgba(168, 85, 247, 0.05) 40%,
+        transparent 70%
+      )
+      rgb(3 9 35);
+  background-attachment: fixed;
+  animation: gridMoveDiagonal 3s linear infinite;
+}
+.sun {
+    & footer {
+    & .section__2{
+      background:rgb(255 255 255);
+      border-top:0.75px solid rgb(187, 189, 195);
+      & .inner__content{
+      & h4{
+        color:var(--color-text-background-sun);
+      }
+      & span{
+        color:var(--color-text-background-sun);
+      }
+    }
+      & hr{
+        background:rgb(187, 189, 195);
+      }
+      & .inner__logoSA2002{
+        & .logoSA2002__sun{
+          display: inline-block;
+        }
+        & .logoSA2002__moon{
+          display: none;
+        }
+      }
+    }
+        & .section__1 {
+      background:
+        linear-gradient(to right, rgb(240, 240, 240) 1px, transparent 1px) 0%
+          0% / 96px 64px,
+        linear-gradient(rgb(240, 240, 240) 1px, transparent 1px) 0% 0% / 96px
+          64px,
+        radial-gradient(600px at 0% 200px, rgb(213, 197, 255), transparent) 0%
+          0% / 100% 100%,
+        radial-gradient(600px at 100% 200px, rgb(213, 197, 255), transparent) 0%
+          0% / 100% 100%,
+        radial-gradient(600px at 50% 0px, rgb(213, 197, 255), transparent) 0%
+          0% / 100% 100%,
+        radial-gradient(600px at 50% 100%, rgb(213, 197, 255), transparent) 0%
+          0% / 100% 100% rgb(255, 255, 255);
+      background-attachment: fixed;
+      animation: gridMoveDiagonal 3s linear infinite;
+      & .inner__item {
+        & .item {
+          background: white;
+          & span {
+            color: var(--color-text-background-sun);
+          }
+          & .imgAI__sun {
+            display: inline-block;
+          }
+          & .imgAI__moon {
+            display: none;
+          }
+        }
+      }
+    }
+}
+  & .chatbox {
+    & #messages {
+      background: white !important;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      & .ai {
+        background: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        color: var(--color-text-background-sun);
+      }
+      & .user{
+        background: #2261F6;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+    }
+    & .input-box {
+      background: white !important;
+      border: 1px solid rgb(182, 182, 182);
+      border-top: 0;
+      & input {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      }
+    }
+  }
+  header {
+    & .list__menu {
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      & a {
+        color: var(--color-text-list-menu-sun);
+        transition: 0.25s ease;
+      }
+      & a:hover {
+        color: #f26f25;
+      }
+    }
+    & .inner__darkmode {
+      backdrop-filter: blur(3px);
+      background-color: #e2e8f0;
+      border: 1px solid #cbd5e1;
+      & .fa-sun {
+        background: white;
+        padding: 8px;
+        border-radius: 50%;
+        color: #f97316;
+      }
+      & .fa-moon {
+        background: #0f172a00;
+        border-radius: 0;
+        padding: 0px;
+        color: var(--color-text-list-menu);
+      }
+    }
+  }
+  background:
+    linear-gradient(to right, rgb(240, 240, 240) 1px, transparent 1px) 0% 0% /
+      20px 20px,
+    linear-gradient(rgb(240, 240, 240) 1px, transparent 1px) 0% 0% / 20px 20px,
+    radial-gradient(600px at 0% 200px, rgb(213, 197, 255), transparent) 0% 0% /
+      100% 100%,
+    radial-gradient(600px at 100% 200px, rgb(213, 197, 255), transparent) 0%
+      0% / 100% 100% rgb(255, 255, 255);
+  transition: 0.75s ease;
+  background-attachment: fixed;
+  background-repeat:
+    repeat repeat,
+    repeat repeat,
+    no-repeat no-repeat,
+    no-repeat no-repeat;
+  background-size:
+    20px 20px,
+    20px 20px,
+    100% 100%,
+    100% 100%;
+}
+// header
+header {
+  z-index: 99999;
+  position: sticky;
+  top: 0;
+  & .inner__darkmode {
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgb(255 255 255 / 0.1);
+    border-radius: 30px;
+    padding: 2px 8px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    & .fa-sun {
+      cursor: pointer;
+      color: var(--color-text-list-menu);
+    }
+    & .fa-moon {
+      cursor: pointer;
+      background: #0f172a;
+      border-radius: 50%;
+      padding: 8px;
+      color: #facc15;
+    }
+  }
+  & .btn__useAI {
+    margin-left: 2%;
+    box-shadow:
+      rgba(233, 204, 55, 0.283) 0px 0px 66px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    background: linear-gradient(
+      90deg,
+      rgb(56, 229, 59) 0%,
+      rgb(83, 205, 97) 50%,
+      rgb(239, 169, 39) 98%
+    );
+    border: 0;
+    transition: 0.5s ease;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  & .btn__useAI:hover {
+    filter: brightness(1.1);
+  }
+  & .menu__item {
+    display: flex;
+  }
+  & .inner__menu {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  & .container {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  & .list__menu {
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+    padding: 8px 24px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(3px);
+    border: 1px solid rgb(255 255 255 / 0.1);
+    & ul {
+      justify-content: center;
+      padding: 0px;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+    }
+    & li {
+      list-style-type: none;
+    }
+    & a {
+      transition: 0.25s ease;
+      font-size: 14px;
+      text-decoration: none;
+      list-style-type: none;
+      color: var(--color-text-list-menu);
+    }
+    & li:hover {
+      & a {
+        color: white;
+      }
+    }
+  }
+}
+//end header
+
+// Chatbot AI
+.chatbox {
+  margin-bottom: 50px;
+  padding-left: 20%;
+  padding-right: 20%;
+  & .header {
+    padding: 0px 20px;
+    background: #2565fa;
+    padding-left: 3%;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    gap: 10px;
+    & img {
+      width: 60px;
+      height: auto;
+    }
+    & p {
+      margin-right: auto;
+    }
+    & button {
+      transition: 0.5s ease;
+      cursor: pointer;
+      border: 0;
+      background: #e11d48;
+      border-radius: 40px;
+      color: white;
+      font-weight: 600;
+      padding: 10px 20px;
+    }
+    & button:hover {
+      transform: scale(1.1);
+      background: red;
+    }
+  }
+  & .messages {
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-color: #ffffff #1e1e1e;
+    background: #212121;
+    width: 100%;
+    height: 500px;
+    & .msg {
+      padding: 10px;
+      color: white;
+      max-width: 60%;
+    }
+    & .ai {
+      margin-right: auto;
+      background: #1e293b;
+      border-radius: 20px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: 20px;
+    }
+    & .user {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: auto;
+      background: #38bdf8;
+      border-radius: 20px;
+      margin-right: 20px;
+    }
+  }
+  & .input-box {
+    padding-top: 20px;
+    background: #212121;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    gap: 10px;
+    & input {
+      padding: 10px 30px;
+      border-radius: 40px;
+      border: 0;
+      transition: 0.5s ease;
+      &:focus {
+        outline: none;
+      }
+    }
+    & button {
+      transition: 0.25s ease;
+      cursor: pointer;
+      width: 37px;
+      border: 0;
+      background: #2565fa;
+      border-radius: 50%;
+      align-items: center;
+      & .fa-paper-plane {
+        color: white;
+      }
+    }
+    & button:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+//end Chatbot AI
+
+// footer
+footer {
+  & .section__2{
+    & p{
+      color:var(--color-text-section1-description);
+      font-size:12px;
+      margin:0;
+      padding-top:10px;
+      padding-bottom:10px;
+    }
+    & hr{
+      border:0;
+      height:0.75px;
+      background:#1A1A1A;
+    }
+    margin-bottom: 0;
+    background: rgb(0 0 0 / 0.8);
+    border-top:1px solid #1A1A1A;
+    & .inner__item{
+      margin-bottom: 50px;
+      display: flex;
+      align-items: center;
+    }
+    & .inner__logoSA2002{
+      width: 50%;
+      display:flex;
+      flex-direction: column;
+      & .logoSA2002__moon{
+        width:200px;
+        height:auto;
+      }
+      & .logoSA2002__sun{
+        position: relative;
+        right:11px;
+        width:200px;
+        height:auto;
+        display: none;
+      }
+    }
+    & .inner__content{
+      width: 50%;
+      & h4{
+        color:white;
+      }
+      & .fa-envelope{
+        color:#f26c21;
+        margin-right: 10px;
+      }
+      & span{
+        color:var(--color-text-section1-description);
+      }
+    }
+  }
+  & .section__1 {
+    padding: 2%;
+    margin-bottom: 0;
+    & h5 {
+      letter-spacing: 0.1em;
+      text-align: center;
+      color: rgb(107 114 128);
+    }
+    background: rgb(0 0 0 / 0.8);
+    & .inner__item {
+      display: flex;
+      justify-content: center;
+      & .item:hover {
+        border: 1px solid #f26c21;
+      }
+      & .item {
+        transition: 0.75s ease;
+        cursor: pointer;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        transition: 0.25s ease;
+        padding: 10px;
+        border-radius: 10px;
+        width: 20%;
+        background-color: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(3px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        & .imgAI__sun {
+          right: 4.75%;
+          position: relative;
+          display: none;
+          width: 200px;
+          height: auto;
+          margin-bottom: 5px;
+        }
+        & .imgAI__moon {
+          width: 200px;
+          height: auto;
+          margin-bottom: 5px;
+        }
+        & span {
+          font-size: 14px;
+          font-weight: 500;
+          color: white;
+        }
+      }
+    }
+  }
+}
+//end footer
