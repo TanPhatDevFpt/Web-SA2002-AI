@@ -51,27 +51,6 @@ body {
 .sun footer .section__1 .inner__item .item .imgAI__moon {
   display: none;
 }
-.sun .chatbox #messages {
-  background: white !important;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.sun .chatbox #messages .ai {
-  background: white;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  color: var(--color-text-background-sun);
-}
-.sun .chatbox #messages .user {
-  background: #2261F6;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-.sun .chatbox .input-box {
-  background: white !important;
-  border: 1px solid rgb(182, 182, 182);
-  border-top: 0;
-}
-.sun .chatbox .input-box input {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
 .sun header .list__menu {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -231,7 +210,7 @@ header .list__menu li:hover a {
 .chatbox .messages {
   overflow-x: hidden;
   overflow-y: auto;
-  scrollbar-color: #ffffff #1e1e1e;
+  scrollbar-color: #a1a1a1 rgba(30, 30, 30, 0);
   background: #212121;
   width: 100%;
   height: 500px;
