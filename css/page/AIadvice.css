@@ -15,6 +15,27 @@ body {
   animation: gridMoveDiagonal 3s linear infinite;
 }
 
+.sun .chatbox .messages {
+  background: white !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.sun .chatbox .messages .ai {
+  background: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: var(--color-text-background-sun);
+}
+.sun .chatbox .messages .user {
+  background: #2261f6;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.sun .input-box {
+  background: white !important;
+  border: 1px solid rgb(182, 182, 182);
+  border-top: 0;
+}
+.sun .input-box input {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
 .sun footer .section__2 {
   background: rgb(255, 255, 255);
   border-top: 0.75px solid rgb(187, 189, 195);
@@ -210,7 +231,7 @@ header .list__menu li:hover a {
 .chatbox .messages {
   overflow-x: hidden;
   overflow-y: auto;
-  scrollbar-color: #a1a1a1 rgba(30, 30, 30, 0);
+  scrollbar-color: #868686 rgba(30, 30, 30, 0);
   background: #212121;
   width: 100%;
   height: 500px;
@@ -280,12 +301,12 @@ footer .section__2 p {
 footer .section__2 hr {
   border: 0;
   height: 0.75px;
-  background: #1A1A1A;
+  background: #1a1a1a;
 }
 footer .section__2 {
   margin-bottom: 0;
   background: rgba(0, 0, 0, 0.8);
-  border-top: 1px solid #1A1A1A;
+  border-top: 1px solid #1a1a1a;
 }
 footer .section__2 .inner__item {
   margin-bottom: 50px;
