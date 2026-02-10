@@ -137,5 +137,5 @@ function clearChat() {
     },
   ];
   messagesDiv.innerHTML = "";
-  addMessage("👋 Chào bạn! Mình là AI Tư Vấn 🤖 Cứ hỏi thoải mái nha!", "ai");
+  addMessage("👋 Chào bạn! Mình là AI Tư Vấn Cứ hỏi thoải mái nha!", "ai");
 }
