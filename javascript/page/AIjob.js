@@ -1,6 +1,3 @@
-const API_KEY =
-  "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";
-
 const messagesDiv = document.querySelector(".messages");
 const input = document.querySelector("#input");
 
