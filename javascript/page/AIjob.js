@@ -84,22 +84,15 @@ async function send() {
   }, 400);
 
   try {
-  const response = await fetch(
-  "https://openrouter.ai/api/v1/chat/completions",
-  {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "Authorization": "Bearer " + API_KEY,
-      "HTTP-Referer": "https://web-sa-2002-ai.vercel.app",
-      "X-Title": "SA2002 AI Chat"
-    },
-    body: JSON.stringify({
-      model: "openai/gpt-oss-120b",
-      messages: chatHistory
-    }),
-  }
-);
+    const response = await fetch("/api/ai", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        messages: chatHistory,
+      }),
+    });
 
     const data = await response.json();
 
