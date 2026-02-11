@@ -82,7 +82,7 @@ async function send() {
   const loading = createLoading();
 
   try {
-    const res = await fetch("/javascript/api/AI", {
+    const res = await fetch("/api/AI.js", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ messages: chatHistory }),
