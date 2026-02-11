@@ -1,6 +1,29 @@
 {
   "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.4",
+    "express": "^5.2.1",
     "json-server": "^1.0.0-beta.5",
+    "node-fetch": "^3.3.2",
     "scss": "^0.2.4"
-  }
+  },
+  "name": "web-sa2002-ai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TanPhatDevFpt/Web-SA2002-AI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/TanPhatDevFpt/Web-SA2002-AI/issues"
+  },
+  "homepage": "https://github.com/TanPhatDevFpt/Web-SA2002-AI#readme"
 }

@@ -1,10 +1,16 @@
-const API_KEY =
-  "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";
-
 const messagesDiv = document.querySelector(".messages");
 const input = document.querySelector("#input");
 
-// ===== SYSTEM PROMPT (GỘP ĐÚNG JS) =====
+// ===== UI FUNCTIONS =====
+function addMessage(text, role) {
+  const div = document.createElement("div");
+  div.className = "msg " + role;
+  div.innerText = text;
+  messagesDiv.appendChild(div);
+  messagesDiv.scrollTop = messagesDiv.scrollHeight;
+}
+
+// ===== SYSTEM PROMPT =====
 let chatHistory = [
   {
     role: "system",
@@ -26,37 +32,40 @@ và hãy nói tiếng việt dù cho trường hợp nào
   },
 ];
 
-// ===== FUNCTIONS =====
-function addMessage(text, className) {
-  const div = document.createElement("div");
-  div.className = "msg " + className;
-  div.innerText = text;
-  messagesDiv.appendChild(div);
-  messagesDiv.scrollTop = messagesDiv.scrollHeight;
+// ===== LOAD LOCAL (QUAN TRỌNG) =====
+const saved = JSON.parse(localStorage.getItem("chatHistory"));
+
+if (saved && saved.length > 1) {
+  chatHistory = saved;
+  messagesDiv.innerHTML = "";
+
+  chatHistory.forEach((msg) => {
+    if (msg.role === "user") addMessage(msg.content, "user");
+    if (msg.role === "assistant") addMessage(msg.content, "ai");
+  });
+} else {
+  addMessage("👋 Chào bạn! Mình là AI Tư Vấn Cứ hỏi thoải mái nha!", "ai");
 }
 
+// ===== SAVE LOCAL =====
 function saveLocal() {
-  const messages = [...messagesDiv.children].map((m) => ({
-    text: m.innerText,
-    role: m.classList.contains("user") ? "user" : "ai",
-  }));
-
-  localStorage.setItem("chatMessages", JSON.stringify(messages));
   localStorage.setItem("chatHistory", JSON.stringify(chatHistory));
 }
 
-// ===== LOAD LOCAL =====
-const savedMessages = JSON.parse(localStorage.getItem("chatMessages")) || [];
-const savedHistory = JSON.parse(localStorage.getItem("chatHistory"));
+// ===== LOADING EFFECT =====
+function createLoading() {
+  const div = document.createElement("div");
+  div.className = "msg ai loading";
+  div.innerText = "AI đang suy nghĩ";
+  messagesDiv.appendChild(div);
 
-if (savedHistory) chatHistory = savedHistory;
+  let dots = 0;
+  const interval = setInterval(() => {
+    dots = (dots + 1) % 4;
+    div.innerText = "AI đang suy nghĩ" + ".".repeat(dots);
+  }, 400);
 
-savedMessages.forEach((msg) => {
-  addMessage(msg.text, msg.role);
-});
-
-if (savedMessages.length === 0) {
-  addMessage("👋 Chào bạn! Mình là AI Tư Vấn Cứ hỏi thoải mái nha!", "ai");
+  return { div, interval };
 }
 
 // ===== SEND MESSAGE =====
@@ -70,55 +79,37 @@ async function send() {
   chatHistory.push({ role: "user", content: text });
   saveLocal();
 
-  // loading dots
-  const loading = document.createElement("div");
-  loading.className = "msg ai loading";
-  messagesDiv.appendChild(loading);
-
-  let dots = 0;
-  loading.innerText = "AI đang suy nghĩ trả lời";
-
-  const loadingInterval = setInterval(() => {
-    dots = (dots + 1) % 4;
-    loading.innerText = "AI đang suy nghĩ trả lời" + ".".repeat(dots);
-  }, 400);
+  const loading = createLoading();
 
   try {
-    const response = await fetch(
-      "https://openrouter.ai/api/v1/chat/completions",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: "Bearer " + API_KEY,
-        },
-        body: JSON.stringify({
-          model: "openai/gpt-oss-120b",
-          messages: chatHistory,
-        }),
-      },
-    );
+    const res = await fetch("http://localhost:3000/api/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ messages: chatHistory }),
+    });
 
-    const data = await response.json();
+    const data = await res.json();
+    clearInterval(loading.interval);
+    messagesDiv.removeChild(loading.div);
 
-    clearInterval(loadingInterval);
-    messagesDiv.removeChild(loading);
+    if (data.error) {
+      addMessage("❌ " + data.error.message, "ai");
+      return;
+    }
 
-    if (!data.choices) {
-      addMessage("⚠️ AI đang bận hoặc hết lượt dùng", "ai");
+    if (!data.choices || !data.choices[0]) {
+      addMessage("⚠️ AI không phản hồi được", "ai");
       return;
     }
 
     const reply = data.choices[0].message.content;
     addMessage(reply, "ai");
-
     chatHistory.push({ role: "assistant", content: reply });
     saveLocal();
   } catch (err) {
-    clearInterval(loadingInterval);
-    messagesDiv.removeChild(loading);
-    addMessage("❌ Lỗi kết nối API", "ai");
-    console.error(err);
+    clearInterval(loading.interval);
+    messagesDiv.removeChild(loading.div);
+    addMessage("❌ Lỗi kết nối server", "ai");
   }
 }
 
@@ -126,16 +117,21 @@ async function send() {
 input.addEventListener("keydown", (e) => {
   if (e.key === "Enter") send();
 });
-// ===== XOÁ CHAT =====
-function clearChat() {
-  localStorage.removeItem("chatMessages");
-  chatHistory = [
-    {
-      role: "system",
-      content:
-        "tên bạn là AI Tư Vấn, nói chuyện thân thiện như bạn thân",
-    },
-  ];
-  messagesDiv.innerHTML = "";
-  addMessage("👋 Chào bạn! Mình là AI Tư Vấn Cứ hỏi thoải mái nha!", "ai");
+const clearBtn = document.querySelector(".clearChat");
+if (clearBtn) {
+  clearBtn.onclick = () => {
+    if (!confirm("Bạn có chắc muốn xóa toàn bộ lịch sử chat không?")) return;
+
+    // Xóa localStorage
+    localStorage.removeItem("chatHistory");
+
+    // Reset bộ nhớ chat
+    chatHistory = chatHistory.filter(m => m.role === "system");
+
+    // Clear UI
+    messagesDiv.innerHTML = "";
+
+    // Tin nhắn chào lại
+    addMessage("👋 Chào bạn! Mình là AI Tư Vấn Cứ hỏi thoải mái nha!", "ai");
+  };
 }
