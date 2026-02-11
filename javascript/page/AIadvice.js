@@ -82,7 +82,7 @@ async function send() {
   const loading = createLoading();
 
   try {
-    const res = await fetch("https://ai-sa2002-server.onrender.com/api/chat", {
+    const res = await fetch("/javascript/api/AI", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ messages: chatHistory }),
