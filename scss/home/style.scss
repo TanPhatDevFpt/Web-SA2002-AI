@@ -130,25 +130,25 @@ body {
 }
 .sun {
   & footer {
-    & .section__2{
-      background:rgb(255 255 255);
-      border-top:0.75px solid rgb(187, 189, 195);
-      & .inner__content{
-      & h4{
-        color:var(--color-text-background-sun);
+    & .section__2 {
+      background: rgb(255 255 255);
+      border-top: 0.75px solid rgb(187, 189, 195);
+      & .inner__content {
+        & h4 {
+          color: var(--color-text-background-sun);
+        }
+        & span {
+          color: var(--color-text-background-sun);
+        }
       }
-      & span{
-        color:var(--color-text-background-sun);
+      & hr {
+        background: rgb(187, 189, 195);
       }
-    }
-      & hr{
-        background:rgb(187, 189, 195);
-      }
-      & .inner__logoSA2002{
-        & .logoSA2002__sun{
+      & .inner__logoSA2002 {
+        & .logoSA2002__sun {
           display: inline-block;
         }
-        & .logoSA2002__moon{
+        & .logoSA2002__moon {
           display: none;
         }
       }
@@ -804,6 +804,7 @@ header {
     padding-right: 20%;
   }
   & h2 {
+    text-wrap: wrap;
     font-size: 40px;
     color: white;
     text-align: center;
@@ -823,54 +824,54 @@ header {
 
 // footer
 footer {
-  & .section__2{
-    & p{
-      color:var(--color-text-section1-description);
-      font-size:12px;
-      margin:0;
-      padding-top:10px;
-      padding-bottom:10px;
+  & .section__2 {
+    & p {
+      color: var(--color-text-section1-description);
+      font-size: 12px;
+      margin: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
-    & hr{
-      border:0;
-      height:0.75px;
-      background:#1A1A1A;
+    & hr {
+      border: 0;
+      height: 0.75px;
+      background: #1a1a1a;
     }
     margin-bottom: 0;
     background: rgb(0 0 0 / 0.8);
-    border-top:1px solid #1A1A1A;
-    & .inner__item{
+    border-top: 1px solid #1a1a1a;
+    & .inner__item {
       margin-bottom: 50px;
       display: flex;
       align-items: center;
     }
-    & .inner__logoSA2002{
+    & .inner__logoSA2002 {
       width: 50%;
-      display:flex;
+      display: flex;
       flex-direction: column;
-      & .logoSA2002__moon{
-        width:200px;
-        height:auto;
+      & .logoSA2002__moon {
+        width: 200px;
+        height: auto;
       }
-      & .logoSA2002__sun{
+      & .logoSA2002__sun {
         position: relative;
-        right:11px;
-        width:200px;
-        height:auto;
+        right: 11px;
+        width: 200px;
+        height: auto;
         display: none;
       }
     }
-    & .inner__content{
+    & .inner__content {
       width: 50%;
-      & h4{
-        color:white;
+      & h4 {
+        color: white;
       }
-      & .fa-envelope{
-        color:#f26c21;
+      & .fa-envelope {
+        color: #f26c21;
         margin-right: 10px;
       }
-      & span{
-        color:var(--color-text-section1-description);
+      & span {
+        color: var(--color-text-section1-description);
       }
     }
   }
@@ -925,3 +926,320 @@ footer {
   }
 }
 //end footer
+
+// responsive
+@media screen and (max-width: 1277.6px) {
+  .section__3 {
+    & .item {
+      width: 67%;
+    }
+  }
+}
+@media screen and (max-width: 1211.2px) {
+  .section__3 {
+    & .item {
+      width: 68%;
+    }
+  }
+}
+@media screen and (max-width: 1190.4px) {
+  .section__1 {
+    & .inner__imgAI {
+      & img {
+        width: 400px !important;
+      }
+    }
+  }
+  .section__3 {
+    & .item {
+      width: 69%;
+    }
+  }
+}
+@media screen and (max-width: 1176px) {
+  .section__3 {
+    & .item {
+      width: 70%;
+    }
+  }
+}
+@media screen and (max-width: 1159.2px) {
+  .section__1 {
+    & .inner__content {
+      & .inner__title {
+        & img {
+          width: 666px;
+        }
+      }
+    }
+  }
+  .section__3 {
+    & .item {
+      width: 71%;
+    }
+  }
+}
+@media screen and (max-width: 1143.2px) {
+  .section__3 {
+    & .item {
+      width: 72%;
+    }
+  }
+}
+@media screen and (max-width: 1127.2px) {
+  .section__3 {
+    & .item {
+      width: 73%;
+    }
+  }
+}
+@media screen and (max-width: 1112px) {
+  .section__1 {
+    & span {
+      font-size: 10px !important;
+    }
+    & p {
+      font-size: 12px !important;
+    }
+    & .inner__title {
+      & span {
+        font-size: 20px !important;
+      }
+    }
+    & .inner__advise,
+    .inner__advise1,
+    .inner__advise2 {
+      padding: 4px !important;
+    }
+    & .logo__AIadvise {
+      padding: 0px !important;
+      padding-top: 7px !important;
+      padding-right: 9px !important;
+      padding-left: 9px !important;
+      height: 30px !important;
+    }
+  }
+  .section__3 {
+    & .item {
+      width: 74%;
+    }
+  }
+}
+@media screen and (max-width: 1097.6px) {
+  .section__3 {
+    & .item {
+      width: 75%;
+    }
+  }
+}
+@media screen and (max-width: 1082.4px) {
+  .section__3 {
+    & .item {
+      width: 76%;
+    }
+  }
+}
+@media screen and (max-width: 1084px) {
+  .section__4 {
+    & .item {
+      width: 27%;
+    }
+  }
+}
+@media screen and (max-width: 1067.2px) {
+  .section__3 {
+    & .item {
+      width: 77%;
+    }
+  }
+  .section__1 {
+    & .inner__content {
+      & .inner__title {
+        & img {
+          width: 566px;
+        }
+      }
+    }
+    & .inner__imgAI {
+      & img {
+        width: 300px !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1055.2px) {
+  .section__3 {
+    & .item {
+      width: 78%;
+    }
+  }
+}
+@media screen and (max-width: 1041.6px) {
+  .section__3 {
+    & .item {
+      width: 80%;
+    }
+  }
+}
+@media screen and (max-width: 1016px) {
+  .section__3 {
+    & .item {
+      width: 81%;
+    }
+  }
+}
+@media screen and (max-width: 1002.4px) {
+  .section__3 {
+    & .item {
+      width: 82%;
+    }
+  }
+}
+@media screen and (max-width: 991.2px) {
+  .section__3 {
+    & .item {
+      width: 83%;
+    }
+  }
+}
+@media screen and (max-width: 979.2px) {
+  .section__3 {
+    & .item {
+      width: 84%;
+    }
+  }
+}
+@media screen and (max-width: 968px) {
+  footer{
+    & .item{
+      & img{
+        width:175px !important;
+      }
+    }
+  }
+  .section__3 {
+    & .item {
+      width: 85%;
+    }
+  }
+}
+@media screen and (max-width: 956px) {
+  .section__3 {
+    & .item {
+      width: 86%;
+    }
+  }
+}
+@media screen and (max-width: 945.60px) {
+  .section__3 {
+    & .item {
+      width: 87%;
+    }
+  }
+}
+@media screen and (max-width: 934.4px) {
+  .section__3 {
+    & .item {
+      width: 88%;
+    }
+  }
+  .section__1 {
+    & .inner__content {
+      & .inner__title {
+        & img {
+          width: 480px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 924px) {
+  .section__3 {
+    & .item {
+      width: 89%;
+    }
+  }
+  .section__1 {
+    & .inner__title {
+      & span {
+        font-size: 16px !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 914.40px) {
+  .section__4 {
+    & .item {
+      width: 26%;
+    }
+  }
+}
+@media screen and (max-width: 913.60px) {
+  .section__3 {
+    & .item {
+      width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 904px) {
+  .section__3 {
+    & .item {
+      width: 91%;
+    }
+  }
+}
+@media screen and (max-width: 895.20px) {
+  header{
+    & .list__menu{
+      padding:8px 0px;
+    }
+  }
+}
+@media screen and (max-width: 893.60px) {
+  .section__3 {
+    & .item {
+      width: 92%;
+    }
+  }
+}
+@media screen and (max-width: 894px) {
+  .section__3 {
+    & .item {
+      width: 93%;
+    }
+  }
+}
+@media screen and (max-width: 875.20px) {
+  .section__3 {
+    & .item {
+      width: 94%;
+    }
+  }
+}
+@media screen and (max-width: 390px) {
+  header{
+    & .container{
+      padding-left: 13% !important;
+      padding-right:5% !important;
+    }
+    & .menu__item{
+      gap:10px !important;
+    }
+    & .list__menu{
+      padding: 6px 0px !important;
+      & ul{
+        gap:9px !important;
+        & li{
+        & a{
+          font-size:8px !important;
+        }
+      }
+      }
+    }
+    & .btn__useAI{
+      display:none !important;
+    }
+  }
+
+}
+//end responsive
