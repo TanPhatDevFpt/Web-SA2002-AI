@@ -977,7 +977,7 @@ footer .section__1 .inner__item .item span {
 }
 @media screen and (max-width: 390px) {
   .section__3 .item {
-    right: 2.25%;
+    right: 1.25%;
     gap: 10px;
     height: 190px;
     width: 119%;
