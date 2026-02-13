@@ -976,8 +976,25 @@ footer .section__1 .inner__item .item span {
   }
 }
 @media screen and (max-width: 390px) {
+  .section__1 .inner__advise, .section__1 .inner__advise1, .section__1 .inner__advise2 {
+    display: none !important;
+  }
+  .section__1 .inner__content .inner__title img {
+    width: 263px;
+  }
+  .section__1 .inner__content .inner__title .logo__sun {
+    right: 9%;
+  }
+  .section__1 .inner__imgAI img {
+    position: relative;
+    left: 30%;
+    width: 200px !important;
+  }
+  .section__1 .inner__title span {
+    font-size: 10px !important;
+  }
   header .container {
-    padding-left: 13% !important;
+    padding-left: 17% !important;
     padding-right: 5% !important;
   }
   header .menu__item {

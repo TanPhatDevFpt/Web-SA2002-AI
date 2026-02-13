@@ -1110,10 +1110,10 @@ footer {
   }
 }
 @media screen and (max-width: 968px) {
-  footer{
-    & .item{
-      & img{
-        width:175px !important;
+  footer {
+    & .item {
+      & img {
+        width: 175px !important;
       }
     }
   }
@@ -1130,7 +1130,7 @@ footer {
     }
   }
 }
-@media screen and (max-width: 945.60px) {
+@media screen and (max-width: 945.6px) {
   .section__3 {
     & .item {
       width: 87%;
@@ -1167,14 +1167,14 @@ footer {
     }
   }
 }
-@media screen and (max-width: 914.40px) {
+@media screen and (max-width: 914.4px) {
   .section__4 {
     & .item {
       width: 26%;
     }
   }
 }
-@media screen and (max-width: 913.60px) {
+@media screen and (max-width: 913.6px) {
   .section__3 {
     & .item {
       width: 90%;
@@ -1188,14 +1188,14 @@ footer {
     }
   }
 }
-@media screen and (max-width: 895.20px) {
-  header{
-    & .list__menu{
-      padding:8px 0px;
+@media screen and (max-width: 895.2px) {
+  header {
+    & .list__menu {
+      padding: 8px 0px;
     }
   }
 }
-@media screen and (max-width: 893.60px) {
+@media screen and (max-width: 893.6px) {
   .section__3 {
     & .item {
       width: 92%;
@@ -1209,7 +1209,7 @@ footer {
     }
   }
 }
-@media screen and (max-width: 875.20px) {
+@media screen and (max-width: 875.2px) {
   .section__3 {
     & .item {
       width: 94%;
@@ -1217,29 +1217,55 @@ footer {
   }
 }
 @media screen and (max-width: 390px) {
-  header{
-    & .container{
-      padding-left: 13% !important;
-      padding-right:5% !important;
-    }
-    & .menu__item{
-      gap:10px !important;
-    }
-    & .list__menu{
-      padding: 6px 0px !important;
-      & ul{
-        gap:9px !important;
-        & li{
-        & a{
-          font-size:8px !important;
-        }
-      }
-      }
-    }
-    & .btn__useAI{
+  .section__1 {
+    & .inner__advise, .inner__advise1, .inner__advise2{
       display:none !important;
     }
+    & .inner__content {
+      & .inner__title {
+        & img {
+          width: 263px;
+        }
+        & .logo__sun{
+          right:9%;
+        }
+      }
+    }
+    & .inner__imgAI {
+      & img {
+        position:relative;
+        left:30%;
+        width: 200px !important;
+      }
+    }
+    & .inner__title {
+      & span {
+        font-size: 10px !important;
+      }
+    }
   }
-
+  header {
+    & .container {
+      padding-left: 17% !important;
+      padding-right: 5% !important;
+    }
+    & .menu__item {
+      gap: 10px !important;
+    }
+    & .list__menu {
+      padding: 6px 0px !important;
+      & ul {
+        gap: 9px !important;
+        & li {
+          & a {
+            font-size: 8px !important;
+          }
+        }
+      }
+    }
+    & .btn__useAI {
+      display: none !important;
+    }
+  }
 }
 //end responsive
