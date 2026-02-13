@@ -1216,6 +1216,149 @@ footer {
     }
   }
 }
+@media screen and (max-width: 431px) {
+  footer{
+    width: 112.3%;
+    & .item{
+      width: 43% !important;
+    }
+  }
+  .section__5 {
+    & .inner__text{
+      & p{
+        font-size:10px;
+      }
+    }
+    & h2 {
+      right: 12%;
+      position: relative;
+      width: 310px;
+      font-size: 33px;
+    }
+  }
+  .section__4 {
+    & .inner__item {
+      flex-direction: column;
+      & .item {
+        width: 100%;
+        & p {
+          padding-left: 0;
+        }
+      }
+    }
+    & h2 {
+      font-size: 33px;
+      padding-left: 12%;
+    }
+    & p {
+      font-size: 15px;
+      padding-left: 13%;
+    }
+  }
+  .section__3 {
+    & .item {
+      right: 3.25%;
+      gap: 10px;
+      height: 190px;
+      width: 119%;
+      & .inner__content {
+        & h3 {
+          font-size: 15px;
+        }
+        & p {
+          padding-left: 0;
+          font-size: 7px;
+        }
+        & a {
+          font-size: 11px !important;
+          padding: 7px 4px !important;
+        }
+      }
+    }
+    & h2 {
+      text-wrap: nowrap;
+      font-size: 33px;
+      padding-left: 3%;
+    }
+    & p {
+      font-size: 15px;
+      padding-left: 13%;
+    }
+  }
+  .section__2 {
+    & h2 {
+      font-size: 33px !important;
+      padding-left: 16% !important;
+    }
+    & p {
+      padding-left: 14% !important;
+      font-size: 15px !important;
+    }
+    & .inner__item {
+      left: 1%;
+      position: relative;
+      flex-direction: column;
+      & .item {
+        width: 100%;
+        & p {
+          padding-left: 0px !important;
+        }
+      }
+    }
+  }
+  .section__1 {
+    & .inner__advise,
+    .inner__advise1,
+    .inner__advise2 {
+      display: none !important;
+    }
+    & .inner__content {
+      & .inner__title {
+        & img {
+          width: 263px;
+        }
+        & .logo__sun {
+          right: 9%;
+        }
+      }
+    }
+    & .inner__imgAI {
+      & img {
+        position: relative;
+        left: 30%;
+        width: 200px !important;
+      }
+    }
+    & .inner__title {
+      & span {
+        font-size: 10px !important;
+      }
+    }
+  }
+  header {
+    & .container {
+      padding-left: 17% !important;
+      padding-right: 5% !important;
+    }
+    & .menu__item {
+      gap: 10px !important;
+    }
+    & .list__menu {
+      padding: 6px 0px !important;
+      & ul {
+        gap: 9px !important;
+        & li {
+          & a {
+            font-size: 8px !important;
+          }
+        }
+      }
+    }
+    & .btn__useAI {
+      display: none !important;
+    }
+  }
+}
 @media screen and (max-width: 390px) {
   footer{
     width: 112.3%;
