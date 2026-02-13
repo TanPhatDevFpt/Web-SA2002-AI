@@ -1217,6 +1217,44 @@ footer {
   }
 }
 @media screen and (max-width: 390px) {
+  footer{
+    width: 112.3%;
+    & .item{
+      width: 43% !important;
+    }
+  }
+  .section__5 {
+    & .inner__text{
+      & p{
+        font-size:10px;
+      }
+    }
+    & h2 {
+      right: 12%;
+      position: relative;
+      width: 310px;
+      font-size: 33px;
+    }
+  }
+  .section__4 {
+    & .inner__item {
+      flex-direction: column;
+      & .item {
+        width: 100%;
+        & p {
+          padding-left: 0;
+        }
+      }
+    }
+    & h2 {
+      font-size: 33px;
+      padding-left: 12%;
+    }
+    & p {
+      font-size: 15px;
+      padding-left: 13%;
+    }
+  }
   .section__3 {
     & .item {
       right: 3.25%;

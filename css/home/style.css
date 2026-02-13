@@ -976,6 +976,38 @@ footer .section__1 .inner__item .item span {
   }
 }
 @media screen and (max-width: 390px) {
+  footer {
+    width: 112.3%;
+  }
+  footer .item {
+    width: 43% !important;
+  }
+  .section__5 .inner__text p {
+    font-size: 10px;
+  }
+  .section__5 h2 {
+    right: 12%;
+    position: relative;
+    width: 310px;
+    font-size: 33px;
+  }
+  .section__4 .inner__item {
+    flex-direction: column;
+  }
+  .section__4 .inner__item .item {
+    width: 100%;
+  }
+  .section__4 .inner__item .item p {
+    padding-left: 0;
+  }
+  .section__4 h2 {
+    font-size: 33px;
+    padding-left: 12%;
+  }
+  .section__4 p {
+    font-size: 15px;
+    padding-left: 13%;
+  }
   .section__3 .item {
     right: 3.25%;
     gap: 10px;
