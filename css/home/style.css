@@ -976,7 +976,54 @@ footer .section__1 .inner__item .item span {
   }
 }
 @media screen and (max-width: 390px) {
-  .section__1 .inner__advise, .section__1 .inner__advise1, .section__1 .inner__advise2 {
+  .section__3 .item {
+    right: 2.25%;
+    gap: 10px;
+    height: 190px;
+    width: 119%;
+  }
+  .section__3 .item .inner__content h3 {
+    font-size: 15px;
+  }
+  .section__3 .item .inner__content p {
+    padding-left: 0;
+    font-size: 7px;
+  }
+  .section__3 .item .inner__content a {
+    font-size: 11px !important;
+    padding: 7px 4px !important;
+  }
+  .section__3 h2 {
+    text-wrap: nowrap;
+    font-size: 33px;
+    padding-left: 3%;
+  }
+  .section__3 p {
+    font-size: 15px;
+    padding-left: 13%;
+  }
+  .section__2 h2 {
+    font-size: 33px !important;
+    padding-left: 16% !important;
+  }
+  .section__2 p {
+    padding-left: 14% !important;
+    font-size: 15px !important;
+  }
+  .section__2 .inner__item {
+    left: 1%;
+    position: relative;
+    flex-direction: column;
+  }
+  .section__2 .inner__item .item {
+    width: 100%;
+  }
+  .section__2 .inner__item .item p {
+    padding-left: 0px !important;
+  }
+  .section__1 .inner__advise,
+  .section__1 .inner__advise1,
+  .section__1 .inner__advise2 {
     display: none !important;
   }
   .section__1 .inner__content .inner__title img {
