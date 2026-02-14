@@ -394,4 +394,107 @@ footer .section__1 .inner__item .item span {
   color: white;
 }
 
+@media (min-width: 370px) {
+  .chatbox {
+    left: 6%;
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+  footer {
+    width: 112.3%;
+  }
+  footer .item {
+    width: 43% !important;
+  }
+  header .container {
+    padding-left: 17% !important;
+    padding-right: 5% !important;
+  }
+  header .menu__item {
+    gap: 10px !important;
+  }
+  header .list__menu {
+    padding: 6px 0px !important;
+  }
+  header .list__menu ul {
+    gap: 9px !important;
+  }
+  header .list__menu ul li a {
+    font-size: 8px !important;
+  }
+  header .btn__useAI {
+    display: none !important;
+  }
+}
+@media (min-width: 390px) {
+  .chatbox {
+    left: 6%;
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+  footer {
+    width: 112.3%;
+  }
+  footer .item {
+    width: 43% !important;
+  }
+  header .container {
+    padding-left: 17% !important;
+    padding-right: 5% !important;
+  }
+  header .menu__item {
+    gap: 10px !important;
+  }
+  header .list__menu {
+    padding: 6px 0px !important;
+  }
+  header .list__menu ul {
+    gap: 9px !important;
+  }
+  header .list__menu ul li a {
+    font-size: 8px !important;
+  }
+  header .btn__useAI {
+    display: none !important;
+  }
+}
+@media (min-width: 430px) {
+  .chatbox {
+    left: 6%;
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+  footer {
+    width: 112.3%;
+  }
+  footer .item {
+    width: 43% !important;
+  }
+  header .container {
+    padding-left: 17% !important;
+    padding-right: 5% !important;
+  }
+  header .menu__item {
+    gap: 10px !important;
+  }
+  header .list__menu {
+    padding: 6px 0px !important;
+  }
+  header .list__menu ul {
+    gap: 9px !important;
+  }
+  header .list__menu ul li a {
+    font-size: 8px !important;
+  }
+  header .btn__useAI {
+    display: none !important;
+  }
+}
+
 /*# sourceMappingURL=AIadvice.css.map */

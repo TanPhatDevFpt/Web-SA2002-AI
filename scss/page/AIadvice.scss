@@ -41,18 +41,18 @@ body {
 }
 .sun {
   & .chatbox {
-    & .messages{
-    background: white !important;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        & .ai {
-      background: white;
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      color: var(--color-text-background-sun);
-    }
-    & .user {
-      background: #2261f6;
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    }
+    & .messages {
+      background: white !important;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      & .ai {
+        background: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        color: var(--color-text-background-sun);
+      }
+      & .user {
+        background: #2261f6;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
     }
   }
   & .input-box {
@@ -470,3 +470,120 @@ footer {
   }
 }
 //end footer
+
+// responsive
+@media (min-width: 370px) {
+  .chatbox{
+    left: 6%;
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+    footer{
+    width: 112.3%;
+    & .item{
+      width: 43% !important;
+    }
+  }
+  header {
+    & .container {
+      padding-left: 17% !important;
+      padding-right: 5% !important;
+    }
+    & .menu__item {
+      gap: 10px !important;
+    }
+    & .list__menu {
+      padding: 6px 0px !important;
+      & ul {
+        gap: 9px !important;
+        & li {
+          & a {
+            font-size: 8px !important;
+          }
+        }
+      }
+    }
+    & .btn__useAI {
+      display: none !important;
+    }
+  }
+}
+@media (min-width: 390px) {
+  .chatbox{
+    left: 6%;
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+    footer{
+    width: 112.3%;
+    & .item{
+      width: 43% !important;
+    }
+  }
+  header {
+    & .container {
+      padding-left: 17% !important;
+      padding-right: 5% !important;
+    }
+    & .menu__item {
+      gap: 10px !important;
+    }
+    & .list__menu {
+      padding: 6px 0px !important;
+      & ul {
+        gap: 9px !important;
+        & li {
+          & a {
+            font-size: 8px !important;
+          }
+        }
+      }
+    }
+    & .btn__useAI {
+      display: none !important;
+    }
+  }
+}
+@media (min-width: 430px) {
+  .chatbox{
+    left: 6%;
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+    footer{
+    width: 112.3%;
+    & .item{
+      width: 43% !important;
+    }
+  }
+  header {
+    & .container {
+      padding-left: 17% !important;
+      padding-right: 5% !important;
+    }
+    & .menu__item {
+      gap: 10px !important;
+    }
+    & .list__menu {
+      padding: 6px 0px !important;
+      & ul {
+        gap: 9px !important;
+        & li {
+          & a {
+            font-size: 8px !important;
+          }
+        }
+      }
+    }
+    & .btn__useAI {
+      display: none !important;
+    }
+  }
+}
+//end responsive
