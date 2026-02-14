@@ -394,7 +394,7 @@ footer .section__1 .inner__item .item span {
   color: white;
 }
 
-@media (min-width: 370px) {
+@media (max-width: 370px) {
   .chatbox {
     left: 6%;
     position: relative;
@@ -428,7 +428,7 @@ footer .section__1 .inner__item .item span {
     display: none !important;
   }
 }
-@media (min-width: 390px) {
+@media (max-width: 390px) {
   .chatbox {
     left: 6%;
     position: relative;
@@ -462,7 +462,7 @@ footer .section__1 .inner__item .item span {
     display: none !important;
   }
 }
-@media (min-width: 430px) {
+@media (max-width: 430px) {
   .chatbox {
     left: 6%;
     position: relative;
