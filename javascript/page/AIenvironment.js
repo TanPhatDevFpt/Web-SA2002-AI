@@ -118,6 +118,10 @@ async function send() {
 input.addEventListener("keydown", (e) => {
   if (e.key === "Enter") send();
 });
+const sendbtn = document.querySelector("#send");
+sendbtn.addEventListener("click",()=>{
+  send();
+});
 const clearBtn = document.querySelector(".clearChat");
 if (clearBtn) {
   clearBtn.onclick = () => {
